@@ -4,7 +4,7 @@ const PostForm = ({create}) => {
     const [post, setPost] = useState({title: '', body: ''}) 
     const addNewPost = () => {
 
-        const newPost = {
+        const newPost = { 
             ...post, id:Date.now()
         }
         create(newPost)
